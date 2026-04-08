@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Side Grocery - Fresh From The Farm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">🥕</span>
+            <span class="brand-text">Road Side Grocery</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon" id="cartIcon">
+            <span>🛒</span>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Fresh Produce,<br>Farm to Table</h1>
+            <p class="hero-subtitle">Hand-picked, locally sourced goodness straight from our family farm</p>
+            <a href="#products" class="btn btn-primary">Explore Products</a>
+        </div>
+        <div class="hero-illustration">
+            <div class="hero-emoji">🌾</div>
+            <div class="floating-emoji float-1">🍅</div>
+            <div class="floating-emoji float-2">🥬</div>
+            <div class="floating-emoji float-3">🥕</div>
+            <div class="floating-emoji float-4">🍯</div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="section-header">
+            <h2>Our Fresh Selection</h2>
+            <p>Farm-fresh products delivered with love</p>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="vegetables">🥬 Vegetables</button>
+            <button class="filter-btn" data-category="fruits">🍎 Fruits</button>
+            <button class="filter-btn" data-category="dairy">🥛 Dairy</button>
+            <button class="filter-btn" data-category="bakery">🍞 Bakery</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 1985, Road Side Grocery started as a small family farm stand on Route 9. What began as selling our own garden produce has grown into a beloved local institution, bringing the finest farm-fresh products to our community every single day.</p>
+                <p>We believe in sustainable farming, supporting local producers, and building relationships with our customers. Every item you see here has been personally selected for quality and freshness.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Years of Service</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Local Farmers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="farm-illustration">
+                    <span>🚜</span>
+                    <span>🏡</span>
+                    <span>🌻</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-carousel" id="testimonialsCarousel">
+            <div class="testimonial active">
+                <p>"The freshest produce I've ever had! The tomatoes taste like summer memories."</p>
+                <div class="testimonial-author">
+                    <span class="author-avatar">😊</span>
+                    <div>
+                        <strong>Sarah Johnson</strong>
+                        <span>Local Customer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Been coming here for 15 years. The quality never disappoints. Best honey in town!"</p>
+                <div class="testimonial-author">
+                    <span class="author-avatar">👨</span>
+                    <div>
+                        <strong>Mike Thompson</strong>
+                        <span>Regular Since 2010</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Love the homemade bread! It's the perfect Sunday morning with my coffee."</p>
+                <div class="testimonial-author">
+                    <span class="author-avatar">👩</span>
+                    <div>
+                        <strong>Emily Chen</strong>
+                        <span>Food Blogger</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Join Our Farm Family!</h2>
+            <p>Get weekly updates on fresh arrivals, special deals, and farm news.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-secondary">Subscribe 📬</button>
+            </form>
+            <p class="form-message" id="formMessage"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Road Side Grocery</h3>
+                <p>Fresh from the farm to your table since 1985</p>
+            </div>
+            <div class="footer-section">
+                <h4>Visit Us</h4>
+                <p>123 Country Road<br>Millfield, VT 05001</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Sat: 7am - 7pm<br>Sun: 9am - 5pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 (802) 555-0123<br>📧 hello@roadsidegrocery.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Road Side Grocery. Made with ❤️ and fresh ingredients.</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image" id="modalImage"></div>
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-category" id="modalCategory"></p>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <button class="btn btn-primary modal-add-btn" id="modalAddBtn">Add to Cart 🛒</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart 🛒</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-empty" id="cartEmpty">
+            <p>Your cart is empty</p>
+            <button class="btn btn-primary" id="startShopping">Start Shopping</button>
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

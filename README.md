@@ -1,4 +1,5 @@
 # Road Side Grocery - Interactive Landing Page
+<a href="https://hits.sh/github.com/sapthesh/Road-side-Grocery-Store/"><img alt="Hits" src="https://hits.sh/github.com/sapthesh/Road-side-Grocery-Store.svg?view=today-total&style=for-the-badge&color=fe7d37"/></a>
 
 A vibrant, interactive landing page for a roadside grocery shop showcasing fresh farm produce with modern design and engaging user experience.
 
